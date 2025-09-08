@@ -18,7 +18,7 @@ object RetrofitInstance {
 
     private val retrofit by lazy {
         Retrofit.Builder()
-            .baseUrl("https://raw.githubusercontent.com/") // önemli: / ile bitmeli
+            .baseUrl("https://raw.githubusercontent.com/")
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

@@ -4,7 +4,7 @@ import com.tugce.programmingjokes.model.Joke
 import retrofit2.http.GET
 
 interface JokesApi {
-    // Raw GitHub URL için baseUrl + path kullanacağız
+    // Raw GitHub URL için baseUrl + path
     @GET("atilsamancioglu/ProgrammingJokesJSON/main/jokes.json")
     suspend fun getJokes(): List<Joke>
 }
